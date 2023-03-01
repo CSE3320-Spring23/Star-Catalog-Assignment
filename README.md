@@ -14,7 +14,7 @@ In this assignment you are provided code that serially calculate the average ang
 6. The code must still calculate the same answer as the single threaded application.
 7. You must include a report documenting your results. It must contain:
 - A brief executive summary/ overview
-- A description of your effort to include which libraris, if any, you used, and the reasons you chose your timing methods.
+- A description of your effort to include which libraries, if any, you used, and the reasons you chose your timing methods.
 - Results in both graph and table form.
 - A discussion of any anomalies you found in the resulting data.
 - A conclusion explaining the optimal number of threads.
