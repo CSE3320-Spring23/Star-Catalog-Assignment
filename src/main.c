@@ -129,9 +129,9 @@ int main( int argc, char * argv[] )
   }
   printf("%d records read\n", star_count );
 
-  // Find the smallest angular distance in the most inefficient way possible
+  // Find the average angular distance in the most inefficient way possible
   double distance =  determineAverageAngularDistance( star_array );
-  printf("Smallest distance found is %lf\n", distance );
+  printf("Average distance found is %lf\n", distance );
 
   return 0;
 }
