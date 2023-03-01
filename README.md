@@ -10,7 +10,7 @@ In this assignment you are provided code that serially calculate the average ang
 2. Multi-thread this application using pthreads.
 3. Determine the optimal number of threads, 2, 4, 10, 25, 100, and 1000, for calculating the minimum, maximum, mean angular distance on your codespace. 
 4. Add the command line parameter -t to allow the user to specify the number of threads to use.
-5. The code must not deadlock or exihibit any race conditions.
+5. The code must not deadlock or exhibit any race conditions.
 6. The code must still calculate the same answer as the single threaded application.
 7. You must include a report documenting your results. It must contain:
 - A brief executive summary/ overview
