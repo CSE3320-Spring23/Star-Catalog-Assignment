@@ -32,7 +32,7 @@
 #include "star.h"
 #include "float.h"
 
-#define NUM_STARS 100000 
+#define NUM_STARS 50000 
 #define MAX_LINE 1024
 #define DELIMITER " \t\n"
 
