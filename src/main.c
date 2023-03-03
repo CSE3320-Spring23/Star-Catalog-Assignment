@@ -131,7 +131,7 @@ int main( int argc, char * argv[] )
 
   // Find the average angular distance in the most inefficient way possible
   double distance =  determineAverageAngularDistance( star_array );
-  printf("Average distance found is %lf\n", distance / NUM_STARS );
+  printf("Average distance found is %lf\n", distance );
 
   return 0;
 }
