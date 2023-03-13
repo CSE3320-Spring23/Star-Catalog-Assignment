@@ -32,13 +32,15 @@
 #include "star.h"
 #include "float.h"
 
-#define NUM_STARS 50000 
+#define NUM_STARS 30000 
 #define MAX_LINE 1024
 #define DELIMITER " \t\n"
 
 struct Star star_array[ NUM_STARS ];
 uint8_t   (*distance_calculated)[NUM_STARS];
 
+double  min  = FLT_MAX;
+double  max  = FLT_MIN;
 
 
 void showHelp()
@@ -73,9 +75,16 @@ float determineAverageAngularDistance( struct Star arr[] )
           distance_calculated[j][i] = 1;
           count++;
 
+          if( min > distance )
+          {
+            min = distance;
+          }
+
+          if( max < distance )
+          {
+            max = distance;
+          }
           mean = mean + (distance-mean)/count;
-          if( i > 49998 )
-          printf("%d %d %d %f %f\n", i, j, count, mean, distance );
         }
       }
     }
@@ -167,6 +176,8 @@ int main( int argc, char * argv[] )
   // Find the average angular distance in the most inefficient way possible
   double distance =  determineAverageAngularDistance( star_array );
   printf("Average distance found is %lf\n", distance );
+  printf("Minimum distance found is %lf\n", min );
+  printf("Maximum distance found is %lf\n", max );
 
   return 0;
 }
